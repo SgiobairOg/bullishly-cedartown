@@ -1,5 +1,5 @@
 //  config/db.js
 
 module.exports = {
-  url: 'mongodb://localhost/fantastic-engine'
+  url: 'mongodb://localhost:27017/fantastic-engine'
 }

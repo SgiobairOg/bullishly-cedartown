@@ -2,11 +2,13 @@
 
 //  grab mongoose
 var mongoose = require( 'mongoose' );
+var Schema = mongoose.Schema;
 
-//  define post model
-//  pass with module.exports 
-module.exports = mongoose.model('Post', {
-  template: { type: String, default: '' },
-  sourceURL: { type: String, default: '' },
-  date: { type: Date, default: Date.now },
+var PostSchema = new Schema({
+    template: { type: String, default: '' },
+    sourceURL: { type: String, default: '' },
+    date: { type: Date, default: Date.now },
 });
+
+//  pass with module.exports 
+module.exports = mongoose.model('Post', PostSchema);
