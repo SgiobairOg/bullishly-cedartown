@@ -5,6 +5,12 @@
     "express": "~4.16.0",
     "mongoose": "~4.11.14",
     "body-parser": "~1.17.1",
-    "method-override": "~2.3.10"
-  }
+    "method-override": "~2.3.10",
+    "snyk": "^1.189.0"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
